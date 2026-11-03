@@ -86,7 +86,7 @@ def main():
     data = st.cache_resource(load_tables)()
     d, weights, geo = data["districts"], data["weights"], data["geo"]
 
-    st.title("Artificial Intelligence-Driven Vulnerability Index Mapping for Districts in Maharashtra to El Niño Droughts Using Socioeconomic and Climatic Principal Component Analysis")
+    st.title("AI-Driven Vulnerability Index Mapping for Districts in Maharashtra to El Niño Droughts Using Socio-Economic and Climatic PCA")
     st.caption("District-level composite vulnerability index using climatic, agricultural and socioeconomic indicators "
                "· 34 in-scope Maharashtra districts · RONI · 1950–2024")
 
