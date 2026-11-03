@@ -38,6 +38,7 @@ NAME = "PBL Minor Project 1 Report 2026-27 - El Nino Drought Vulnerability"
 TITLE = "AI-Driven Vulnerability Index Mapping for Districts in Maharashtra to El Niño Droughts Using Socio-Economic and Climatic PCA"
 STUDENTS = [("Tanishq Mewada", "34", "26255067"), ("Saad Patel", "47", "26255089"), ("Peeyusha Patki", "48", "26255090")]  # roll, seat no.
 GUIDE = "Prof. Pankaj Deshmukh"
+DASHBOARD_URL = "https://maharashtra-elnino-vulnerability.streamlit.app"
 TOC_LABELS = ["Introduction", "Aim & Objective", "Literature Survey", "Social Impact/Effect of Problem", "System Design",
               "Flow Chart", "System Implementation", "Results and Analysis", "Conclusion", "References"]  # as in the format
 FONT = "Times New Roman"

@@ -27,7 +27,7 @@ FIG = OUT / "figures"
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(ROOT / "paper" / "build"))
 from build_paper import runs_of  # noqa: E402
-from build_report import FONT, GUIDE, STUDENTS, TITLE, borders, para, to_pdf  # noqa: E402
+from build_report import DASHBOARD_URL, FONT, GUIDE, STUDENTS, TITLE, borders, para, to_pdf  # noqa: E402
 from references import REFS  # noqa: E402
 
 NAMES = ", ".join(n for n, _, _ in STUDENTS)
@@ -136,11 +136,12 @@ def one_page():
         p.paragraph_format.tab_stops.add_tab_stop(Inches(0.6))
     para(doc, "Flow diagram:", before=8, after=6)
     p = para(doc, align=C, after=8)
-    p.add_run().add_picture(str(FIG / "fig_flowchart.png"), width=Inches(2.6))
+    p.add_run().add_picture(str(FIG / "fig_flowchart.png"), width=Inches(2.3))
     para(doc, "Software:", after=6)
     for i, sw in enumerate(SOFTWARE, 1):
         para(doc, f"{i}. {sw}", after=3)
     para(doc, f"Conclusion: {CONCLUSION}", before=10, **body)
+    para(doc, f"Live dashboard: {DASHBOARD_URL}", before=6, after=0)
     para(doc, "References:", before=10, after=8)
     for i, k in enumerate(REF_KEYS[:3], 1):
         p = para(doc, after=5)
@@ -276,12 +277,13 @@ def poster():
     right.figure(FIG / "fig_architecture.png", 390, "Figure 2: System architecture of the vulnerability mapping system")
     right.heading("Result and Discussion")
     right.text(RESULTS)
-    right.figure(ROOT / "paper" / "figures" / "fig5_vulnerability_groups_map.png", 500,
+    right.figure(ROOT / "paper" / "figures" / "fig5_vulnerability_groups_map.png", 460,
                  "Figure 3: K-Means vulnerability groups of the 34 districts")
     right.heading("Conclusion")
     right.text(POSTER_CONCLUSION)
     right.heading("Achievements")
-    right.text(ACHIEVEMENT)
+    right.text(ACHIEVEMENT, after=4)
+    right.text(f"Live dashboard: {DASHBOARD_URL}", align=PP_ALIGN.LEFT)
     right.heading("Acknowledgement")
     right.text(ACK)
     right.heading("References")

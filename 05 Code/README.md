@@ -51,7 +51,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-It opens at http://localhost:8501. It shows the district map (group or 0–100 index view), a district selector with the
+The deployed version is live at https://maharashtra-elnino-vulnerability.streamlit.app. Run locally, it opens at http://localhost:8501. It shows the district map (group or 0–100 index view), a district selector with the
 relative vulnerability index, the six indicators and PCA weights, 2018 / 2023 / 2026-holdout drought-declaration shares,
 the validation summary and a two-district comparison. It performs no modelling (see `reports/dashboard_report.md`).
 
