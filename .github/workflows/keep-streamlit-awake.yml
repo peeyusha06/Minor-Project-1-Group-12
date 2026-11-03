@@ -1,0 +1,26 @@
+name: Keep Streamlit app awake
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # every 6 hours; the app sleeps after about 12 hours without visits
+  workflow_dispatch:
+
+permissions:
+  actions: write
+
+jobs:
+  visit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github   # skip the large data files
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install playwright && playwright install --with-deps chromium
+      - run: python .github/wake_streamlit.py
+      # GitHub turns off scheduled workflows after 60 days without repository activity
+      - run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/keep-streamlit-awake.yml/enable"
+        env:
+          GH_TOKEN: ${{ github.token }}

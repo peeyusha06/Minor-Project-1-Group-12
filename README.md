@@ -27,7 +27,7 @@ Department of Artificial Intelligence and Data Science, K. J. Somaiya Institute 
 | [06 Research Paper](06%20Research%20Paper) | Research paper in IEEE format (DOCX and PDF) |
 | [07 Poster](07%20Poster) | Project poster (PPTX and PDF) |
 
-`streamlit_app.py`, `requirements.txt` and `.streamlit/` at the top level only start the online dashboard on Streamlit Community Cloud. The dashboard code is `05 Code/app.py`.
+`streamlit_app.py`, `requirements.txt` and `.streamlit/` at the top level only start the online dashboard on Streamlit Community Cloud. The dashboard code is `05 Code/app.py`. A scheduled GitHub Action (`.github/workflows/keep-streamlit-awake.yml`) opens the dashboard every 6 hours so that it does not go to sleep.
 
 ## Code and datasets (05 Code)
 
