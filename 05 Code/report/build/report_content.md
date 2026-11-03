@@ -10,7 +10,7 @@ Figure 1.1 shows the El Niño signal in the data used in this project. Each bar 
 
 ![Figure 1.1: Average June to September rainfall departure of the 34 study districts, 1950 to 2024. El Niño years are shown in red.](../figures/fig_monsoon_departure.png){6.0}
 
-This project, "AI-Driven Vulnerability Index Mapping for Districts in Maharashtra to El Niño Droughts Using Socioeconomic and Climatic PCA", addresses these gaps. It builds a reproducible Python pipeline that links 75 years of India Meteorological Department (IMD) gridded rainfall with RONI and with census data, uses PCA to weight six indicators, produces a relative 0 to 100 vulnerability index for 34 districts, groups the districts into Low, Medium and High vulnerability with K-Means clustering, checks the result against Government of Maharashtra drought declarations, and presents everything in maps and an interactive Streamlit dashboard.
+This project, "AI-Driven Vulnerability Index Mapping for Districts in Maharashtra to El Niño Droughts Using Socio-Economic and Climatic PCA", addresses these gaps. It builds a reproducible Python pipeline that links 75 years of India Meteorological Department (IMD) gridded rainfall with RONI and with census data, uses PCA to weight six indicators, produces a relative 0 to 100 vulnerability index for 34 districts, groups the districts into Low, Medium and High vulnerability with K-Means clustering, checks the result against Government of Maharashtra drought declarations, and presents everything in maps and an interactive Streamlit dashboard.
 
 # 2. Aim and Objectives
 

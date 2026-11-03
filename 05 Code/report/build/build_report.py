@@ -35,7 +35,7 @@ from references import REFS  # noqa: E402
 
 FIG = OUT / "figures"
 NAME = "PBL Minor Project 1 Report 2026-27 - El Nino Drought Vulnerability"
-TITLE = "AI-Driven Vulnerability Index Mapping for Districts in Maharashtra to El Niño Droughts Using Socioeconomic and Climatic PCA"
+TITLE = "AI-Driven Vulnerability Index Mapping for Districts in Maharashtra to El Niño Droughts Using Socio-Economic and Climatic PCA"
 STUDENTS = [("Tanishq Mewada", "34", "26255067"), ("Saad Patel", "47", "26255089"), ("Peeyusha Patki", "48", "26255090")]  # roll, seat no.
 GUIDE = "Prof. Pankaj Deshmukh"
 TOC_LABELS = ["Introduction", "Aim & Objective", "Literature Survey", "Social Impact/Effect of Problem", "System Design",

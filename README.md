@@ -1,6 +1,6 @@
 # Minor Project 1, Group 12
 
-**AI-Driven Vulnerability Index Mapping for Districts in Maharashtra to El Niño Droughts Using Socioeconomic and Climatic PCA**
+**AI-Driven Vulnerability Index Mapping for Districts in Maharashtra to El Niño Droughts Using Socio-Economic and Climatic PCA**
 
 Project Based Learning, Minor Project 1, T.Y. B.Tech (Semester V), Academic Year 2026-27
 Department of Artificial Intelligence and Data Science, K. J. Somaiya Institute of Technology, Sion, Mumbai

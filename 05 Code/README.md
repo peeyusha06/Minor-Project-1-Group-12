@@ -1,4 +1,4 @@
-# Artificial Intelligence-Driven Vulnerability Index Mapping for Districts in Maharashtra to El Niño Droughts Using Socioeconomic and Climatic Principal Component Analysis
+# AI-Driven Vulnerability Index Mapping for Districts in Maharashtra to El Niño Droughts Using Socio-Economic and Climatic PCA
 
 T.Y. Minor Project (K. J. Somaiya Institute of Technology, AI & DS, Group 12). **Working repository (temporary) — the final repository will be created later.**
 
