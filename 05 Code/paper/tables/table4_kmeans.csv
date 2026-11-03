@@ -1,0 +1,4 @@
+k,primary,inertia,silhouette_score,cluster_sizes_low_to_high,centroids_low_to_high,boundaries_between_groups
+2,False,5946.518,0.594,21;13,37.61;77.41,57.51
+3,True,2868.853,0.587,4;20;10,13.81;45.86;82.38,29.83;64.12
+4,False,1456.28,0.571,4;14;8;8,13.81;41.13;59.57;86.06,27.47;50.35;72.81

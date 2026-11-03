@@ -1,0 +1,8 @@
+comparison,n_districts,spearman_with_primary,n_changing_group,pct_changing_group,changed_districts,group_sizes_low_medium_high,centroids_low_medium_high
+equal weights,34,0.992972,2,5.882353,Wardha (Medium -> Low); Hingoli (High -> Medium),5;20;9,17.18;46.52;83.56
+"PCA |loading|, all 6 components",34,0.994805,1,2.941176,Wardha (Medium -> Low),5;19;10,17.90;46.36;82.53
+OECD/JRC factor weights,34,0.933690,2,5.882353,Buldhana (Medium -> High); Washim (Medium -> High),4;18;12,9.31;46.14;80.82
+hazard + social,34,0.990527,1,2.941176,Hingoli (High -> Medium),4;21;9,12.62;44.31;83.04
+Pune-excluded rainfall,34,0.994805,1,2.941176,Hingoli (High -> Medium),4;21;9,13.23;45.04;83.38
+ONI v6 instead of RONI,34,0.960581,4,11.764706,Buldhana (Medium -> High); Washim (Medium -> High); Solapur (High -> Medium); Satara (Medium -> High),4;18;12,21.30;52.66;82.37
+tertiles of the primary index (not K-Means),34,1.000000,9,26.470588,Washim (Medium -> tertile 3); Wardha (Medium -> tertile 1); Gadchiroli (Medium -> tertile 1); Chandrapur (Medium -> tertile 1); Yavatmal (Medium -> tertile 1); Nashik (Medium -> tertile 1); Raigad (Medium -> tertile 1); Pune (Medium -> tertile 1); Sindhudurg (Medium -> tertile 1),12;11;11,29.92;50.05;80.59

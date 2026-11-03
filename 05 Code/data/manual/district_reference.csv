@@ -1,0 +1,37 @@
+census_2011_district_code,current_lgd_district_code,current_district_name,marathi_name,former_names,agcensus_2010_11_report_name,gr_names_as_printed,notes
+497,497,Nandurbar,नंदुरबार,,Nandurbar,नंदुरबार,
+498,498,Dhule,धुळे,,Dhule,धुळे,
+499,499,Jalgaon,जळगाव,,Jalgaon,जळगांव|जळगाव,
+500,500,Buldhana,बुलढाणा,Buldana (Census 2011 spelling),Buldhana,बुलडाणा|बुलढाणा,
+501,501,Akola,अकोला,,Akola,अकोला,
+502,502,Washim,वाशिम,,Washim,वाशिम,
+503,503,Amravati,अमरावती,,Amaravati,अमरावती,
+504,504,Wardha,वर्धा,,Wardha,वर्धा,
+505,505,Nagpur,नागपूर,,Nagpur,नागपूर,
+506,506,Bhandara,भंडारा,,Bhandara,भंडारा,
+507,507,Gondia,गोंदिया,Gondiya (Census 2011 spelling),Gondia,गोंदिया|गोंदिया,
+508,508,Gadchiroli,गडचिरोली,Garhchiroli (DataMeet spelling),Gadchiroli,गडचिरोली,
+509,509,Chandrapur,चंद्रपूर,,Chandrapur,चंद्रपूर,
+510,510,Yavatmal,यवतमाळ,Yeotmal (ICRISAT spelling),Yavatmal,यवतमाळ,
+511,511,Nanded,नांदेड,,Nanded,नांदेड,
+512,512,Hingoli,हिंगोली,,Hingoli,हिंगोली,
+513,513,Parbhani,परभणी,,Parbhani,परभणी,
+514,514,Jalna,जालना,,Jalna,जालना,
+515,515,Chhatrapati Sambhajinagar,छत्रपती संभाजीनगर,Aurangabad (Census 2011 name; औरंगाबाद),Aurangabad,औरंगाबाद|छत्रपती संभाजीनगर|छ. संभाजीनगर,Renamed after 2011; new name used in 2023 and 2026 GRs and in the Survey of India layer.
+516,516,Nashik,नाशिक,Nasik (ICRISAT spelling),Nashik,नाशिक,
+517,517,Thane,ठाणे,,Thane,ठाणे,In geography A this code includes the 8 talukas that formed Palghar district in 2014.
+518,518,Mumbai Suburban,मुंबई उपनगर,,,,No villages in the Village Directory and no holdings in the Agriculture Census report.
+519,519,Mumbai City,मुंबई शहर,Mumbai (Census 2011 name),,,No villages in the Village Directory and no holdings in the Agriculture Census report.
+520,520,Raigad,रायगड,Raigarh (Census 2011 spelling),Raigad,रायगड,
+521,521,Pune,पुणे,,Pune,पुणे,
+522,522,Ahilyanagar,अहिल्यानगर,Ahmadnagar (Census 2011 spelling); Ahmednagar (अहमदनगर),Ahmednagar,अहमदनगर|अहिल्यानगर,Renamed after 2011; new name used in the 2026 GR and in the Survey of India layer.
+523,523,Beed,बीड,Bid (Census 2011 spelling),Beed,बीड,
+524,524,Latur,लातूर,,Latur,लातूर,
+525,525,Dharashiv,धाराशिव,Osmanabad (Census 2011 name; उस्मानाबाद),Osmanabad,उस्मानाबाद|धाराशिव,Renamed after 2011; new name used in 2023 and 2026 GRs and in the Survey of India layer.
+526,526,Solapur,सोलापूर,,Solapur,सोलापूर,
+527,527,Satara,सातारा,,Satara,सातारा,
+528,528,Ratnagiri,रत्नागिरी,,Ratnagiri,रत्नागिरी,
+529,529,Sindhudurg,सिंधुदुर्ग,,Sindhudurg,सिंधुदुर्ग,
+530,530,Kolhapur,कोल्हापूर,,Kolhapur,कोल्हापूर,
+531,531,Sangli,सांगली,,Sangali,सांगली,
+517,681,Palghar,पालघर,Part of Thane district in Census 2011,Thane (tahsils: Wasai; Wada; Dahanu; Palghar; Vikramgad; Jawahar; Mokhada; Talasari),पालघर,Created 2014 from 8 Thane talukas. Census 2011 sub-district codes 04157-04164 (Talasari; Dahanu; Vikramgad; Jawhar; Mokhada; Vada; Palghar; Vasai). Exists only in geography B.

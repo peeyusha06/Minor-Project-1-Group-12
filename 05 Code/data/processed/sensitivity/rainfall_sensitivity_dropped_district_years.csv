@@ -1,0 +1,13 @@
+district_id,year,scenario
+521,2005,pune_excluded
+521,2009,pune_excluded
+499,1962,all_flagged_excluded
+500,1962,all_flagged_excluded
+511,1988,all_flagged_excluded
+514,1962,all_flagged_excluded
+515,1962,all_flagged_excluded
+521,2005,all_flagged_excluded
+521,2009,all_flagged_excluded
+522,2005,all_flagged_excluded
+526,1962,all_flagged_excluded
+527,2005,all_flagged_excluded

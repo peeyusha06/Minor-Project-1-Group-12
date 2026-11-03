@@ -1,0 +1,10 @@
+rule,components_retained,source,cumulative_variance_at_K
+Kaiser: eigenvalue > 1,3,"OECD/JRC Handbook 2008, Box 6",0.744675
+"OECD standard practice: eigenvalue > 1, each > 10% variance, cumulative > 60%",3,"OECD/JRC Handbook 2008, section 6.1 (cumulative at this K checked below)",0.744675
+Jolliffe: eigenvalue > 0.7,3,"OECD/JRC Handbook 2008, Box 6",0.744675
+Variance explained >= 80%,4,"OECD/JRC Handbook 2008, Box 6",0.855222
+Variance explained >= 90%,5,"OECD/JRC Handbook 2008, Box 6",0.957822
+Horn parallel analysis: eigenvalue > 95th percentile of random-data eigenvalue,1,Horn (1965); 5000 random 34 x 6 normal data sets,0.342738
+Horn parallel analysis: eigenvalue > mean random-data eigenvalue,1,Horn (1965),0.342738
+Bootstrap: lower 2.5% bound of eigenvalue > 1,2,"bootstrap of districts, 2000 resamples (idea from OECD/JRC Handbook 2008, Jackson 1993)",0.550482
+All components,6,no reduction,1.000000

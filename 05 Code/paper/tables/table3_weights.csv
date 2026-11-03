@@ -1,0 +1,7 @@
+original_feature,conceptual_dimension,sign_multiplier,loading_PC1,loading_PC2,loading_PC3,raw_weight,weight
+enso_rain_slope_pct_per_degC,Exposure,-1,0.739,0.329,0.102,0.341,0.168
+rain_en_deficient_frequency,Exposure,1,0.192,0.88,0.303,0.307,0.151
+soc_agri_worker_share_of_workers_pct,Sensitivity,1,0.712,-0.119,-0.529,0.372,0.183
+irr_rainfed_share_of_cropped_land_pct,Sensitivity,1,0.29,-0.562,0.69,0.35,0.173
+land_small_holding_share_pct,Sensitivity,1,-0.661,0.08,-0.425,0.326,0.161
+soc_literacy_rate_7plus_pct,Adaptive capacity,-1,0.667,-0.166,-0.356,0.332,0.164

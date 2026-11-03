@@ -1,0 +1,7 @@
+component,eigenvalue,explained_variance_ratio,cumulative_explained_variance,eigenvalue_gt_1
+PC1,2.083604,0.347267,0.347267,True
+PC2,1.246731,0.207789,0.555056,True
+PC3,1.162772,0.193795,0.748851,True
+PC4,0.662868,0.110478,0.859329,False
+PC5,0.599572,0.099929,0.959258,False
+PC6,0.244453,0.040742,1.000000,False

@@ -1,0 +1,135 @@
+scenario,section,item,primary,sensitivity,difference,note
+pune_excluded,explained_variance_ratio,PC1,0.342738,0.347267,0.004530,
+pune_excluded,explained_variance_ratio,PC2,0.207744,0.207789,0.000044,
+pune_excluded,explained_variance_ratio,PC3,0.194193,0.193795,-0.000398,
+pune_excluded,explained_variance_ratio,PC4,0.110548,0.110478,-0.000070,
+pune_excluded,explained_variance_ratio,PC5,0.102599,0.099929,-0.002671,
+pune_excluded,explained_variance_ratio,PC6,0.042178,0.040742,-0.001436,
+pune_excluded,component_match_abs_cosine,PC1,1.000000,0.995325,-0.004675,matched to sensitivity PC1
+pune_excluded,PC1_weight,pca_enso_rain_slope_vulnerability,0.515176,0.525245,0.010069,matched to sensitivity PC1
+pune_excluded,PC1_loading,pca_enso_rain_slope_vulnerability,0.738774,0.758175,0.019400,matched to sensitivity PC1
+pune_excluded,PC1_weight,pca_en_deficient_frequency,0.133572,0.224625,0.091052,matched to sensitivity PC1
+pune_excluded,PC1_loading,pca_en_deficient_frequency,0.191546,0.324239,0.132693,matched to sensitivity PC1
+pune_excluded,PC1_weight,pca_agri_worker_share,0.496694,0.477735,-0.018959,matched to sensitivity PC1
+pune_excluded,PC1_loading,pca_agri_worker_share,0.712271,0.689596,-0.022675,matched to sensitivity PC1
+pune_excluded,PC1_weight,pca_rainfed_share,0.202289,0.183838,-0.018451,matched to sensitivity PC1
+pune_excluded,PC1_loading,pca_rainfed_share,0.290087,0.265365,-0.024722,matched to sensitivity PC1
+pune_excluded,PC1_weight,pca_small_holding_share,-0.461034,-0.457656,0.003378,matched to sensitivity PC1
+pune_excluded,PC1_loading,pca_small_holding_share,-0.661135,-0.660613,0.000522,matched to sensitivity PC1
+pune_excluded,PC1_weight,pca_literacy_vulnerability,0.465375,0.449650,-0.015726,matched to sensitivity PC1
+pune_excluded,PC1_loading,pca_literacy_vulnerability,0.667360,0.649056,-0.018304,matched to sensitivity PC1
+pune_excluded,score_correlation,PC1,1.000000,0.996998,-0.003002,matched to sensitivity PC1
+pune_excluded,pune_score,PC1,-1.886419,-1.558792,0.327628,matched to sensitivity PC1
+pune_excluded,max_abs_score_change_other_districts,PC1,0.000000,0.199284,0.199284,matched to sensitivity PC1
+pune_excluded,component_match_abs_cosine,PC2,1.000000,0.994277,-0.005723,matched to sensitivity PC2
+pune_excluded,PC2_weight,pca_enso_rain_slope_vulnerability,0.295084,0.282159,-0.012924,matched to sensitivity PC2
+pune_excluded,PC2_loading,pca_enso_rain_slope_vulnerability,0.329447,0.315051,-0.014396,matched to sensitivity PC2
+pune_excluded,PC2_weight,pca_en_deficient_frequency,0.787789,0.743816,-0.043972,matched to sensitivity PC2
+pune_excluded,PC2_loading,pca_en_deficient_frequency,0.879528,0.830524,-0.049004,matched to sensitivity PC2
+pune_excluded,PC2_weight,pca_agri_worker_share,-0.106753,-0.130416,-0.023663,matched to sensitivity PC2
+pune_excluded,PC2_loading,pca_agri_worker_share,-0.119184,-0.145619,-0.026435,matched to sensitivity PC2
+pune_excluded,PC2_weight,pca_rainfed_share,-0.503609,-0.539821,-0.036213,matched to sensitivity PC2
+pune_excluded,PC2_loading,pca_rainfed_share,-0.562255,-0.602749,-0.040494,matched to sensitivity PC2
+pune_excluded,PC2_weight,pca_small_holding_share,0.071793,0.145758,0.073965,matched to sensitivity PC2
+pune_excluded,PC2_loading,pca_small_holding_share,0.080154,0.162749,0.082595,matched to sensitivity PC2
+pune_excluded,PC2_weight,pca_literacy_vulnerability,-0.148804,-0.193553,-0.044749,matched to sensitivity PC2
+pune_excluded,PC2_loading,pca_literacy_vulnerability,-0.166133,-0.216116,-0.049983,matched to sensitivity PC2
+pune_excluded,score_correlation,PC2,1.000000,0.992213,-0.007787,matched to sensitivity PC2
+pune_excluded,pune_score,PC2,3.572117,3.152964,-0.419152,matched to sensitivity PC2
+pune_excluded,max_abs_score_change_other_districts,PC2,0.000000,0.251627,0.251627,matched to sensitivity PC2
+pune_excluded,component_match_abs_cosine,PC3,1.000000,0.998586,-0.001414,matched to sensitivity PC3
+pune_excluded,PC3_weight,pca_enso_rain_slope_vulnerability,0.094384,0.107923,0.013538,matched to sensitivity PC3
+pune_excluded,PC3_loading,pca_enso_rain_slope_vulnerability,0.101881,0.116375,0.014494,matched to sensitivity PC3
+pune_excluded,PC3_weight,pca_en_deficient_frequency,0.280306,0.294909,0.014603,matched to sensitivity PC3
+pune_excluded,PC3_loading,pca_en_deficient_frequency,0.302569,0.318006,0.015437,matched to sensitivity PC3
+pune_excluded,PC3_weight,pca_agri_worker_share,-0.490046,-0.508930,-0.018884,matched to sensitivity PC3
+pune_excluded,PC3_loading,pca_agri_worker_share,-0.528967,-0.548789,-0.019822,matched to sensitivity PC3
+pune_excluded,PC3_weight,pca_rainfed_share,0.638991,0.614954,-0.024037,matched to sensitivity PC3
+pune_excluded,PC3_loading,pca_rainfed_share,0.689743,0.663117,-0.026625,matched to sensitivity PC3
+pune_excluded,PC3_weight,pca_small_holding_share,-0.393954,-0.368103,0.025851,matched to sensitivity PC3
+pune_excluded,PC3_loading,pca_small_holding_share,-0.425244,-0.396933,0.028311,matched to sensitivity PC3
+pune_excluded,PC3_weight,pca_literacy_vulnerability,-0.329949,-0.358751,-0.028803,matched to sensitivity PC3
+pune_excluded,PC3_loading,pca_literacy_vulnerability,-0.356155,-0.386849,-0.030694,matched to sensitivity PC3
+pune_excluded,score_correlation,PC3,1.000000,0.998218,-0.001782,matched to sensitivity PC3
+pune_excluded,pune_score,PC3,1.336293,1.309016,-0.027277,matched to sensitivity PC3
+pune_excluded,max_abs_score_change_other_districts,PC3,0.000000,0.141292,0.141292,matched to sensitivity PC3
+pune_excluded,pune_input,enso_rain_slope_pct_per_degC,-7.886991,-8.749072,-0.862081,
+pune_excluded,pune_input,rain_en_deficient_frequency,0.722222,0.611111,-0.111111,
+pune_excluded,loo_median_abs_cosine,PC1,0.999235,0.999295,0.000060,
+pune_excluded,loo_min_abs_cosine,PC1,0.947638,0.973844,0.026206,primary min when omitting Pune; sensitivity min when omitting Pune
+pune_excluded,loo_runs_order_changed,PC1,0.000000,0.000000,0.000000,sensitivity: 
+pune_excluded,loo_median_abs_cosine,PC2,0.994281,0.993672,-0.000609,
+pune_excluded,loo_min_abs_cosine,PC2,0.425989,0.466598,0.040609,primary min when omitting Pune; sensitivity min when omitting Pune
+pune_excluded,loo_runs_order_changed,PC2,2.000000,1.000000,-1.000000,sensitivity: Pune
+pune_excluded,loo_median_abs_cosine,PC3,0.991579,0.990323,-0.001255,
+pune_excluded,loo_min_abs_cosine,PC3,0.418497,0.462244,0.043747,primary min when omitting Pune; sensitivity min when omitting Pune
+pune_excluded,loo_runs_order_changed,PC3,2.000000,1.000000,-1.000000,sensitivity: Pune
+pune_excluded,loo_min_plane_projection,PC2,0.925691,0.958658,0.032966,
+pune_excluded,loo_min_plane_projection,PC3,0.978364,0.978596,0.000232,
+all_flagged_excluded,explained_variance_ratio,PC1,0.342738,0.345454,0.002716,
+all_flagged_excluded,explained_variance_ratio,PC2,0.207744,0.209854,0.002110,
+all_flagged_excluded,explained_variance_ratio,PC3,0.194193,0.194077,-0.000116,
+all_flagged_excluded,explained_variance_ratio,PC4,0.110548,0.108021,-0.002527,
+all_flagged_excluded,explained_variance_ratio,PC5,0.102599,0.100960,-0.001639,
+all_flagged_excluded,explained_variance_ratio,PC6,0.042178,0.041634,-0.000544,
+all_flagged_excluded,component_match_abs_cosine,PC1,1.000000,0.994218,-0.005782,matched to sensitivity PC1
+all_flagged_excluded,PC1_weight,pca_enso_rain_slope_vulnerability,0.515176,0.523460,0.008284,matched to sensitivity PC1
+all_flagged_excluded,PC1_loading,pca_enso_rain_slope_vulnerability,0.738774,0.753622,0.014848,matched to sensitivity PC1
+all_flagged_excluded,PC1_weight,pca_en_deficient_frequency,0.133572,0.233582,0.100010,matched to sensitivity PC1
+all_flagged_excluded,PC1_loading,pca_en_deficient_frequency,0.191546,0.336287,0.144741,matched to sensitivity PC1
+all_flagged_excluded,PC1_weight,pca_agri_worker_share,0.496694,0.477087,-0.019607,matched to sensitivity PC1
+all_flagged_excluded,PC1_loading,pca_agri_worker_share,0.712271,0.686861,-0.025411,matched to sensitivity PC1
+all_flagged_excluded,PC1_weight,pca_rainfed_share,0.202289,0.177659,-0.024630,matched to sensitivity PC1
+all_flagged_excluded,PC1_loading,pca_rainfed_share,0.290087,0.255775,-0.034312,matched to sensitivity PC1
+all_flagged_excluded,PC1_weight,pca_small_holding_share,-0.461034,-0.464527,-0.003493,matched to sensitivity PC1
+all_flagged_excluded,PC1_loading,pca_small_holding_share,-0.661135,-0.668778,-0.007643,matched to sensitivity PC1
+all_flagged_excluded,PC1_weight,pca_literacy_vulnerability,0.465375,0.443249,-0.022127,matched to sensitivity PC1
+all_flagged_excluded,PC1_loading,pca_literacy_vulnerability,0.667360,0.638143,-0.029217,matched to sensitivity PC1
+all_flagged_excluded,score_correlation,PC1,1.000000,0.994684,-0.005316,matched to sensitivity PC1
+all_flagged_excluded,pune_score,PC1,-1.886419,-1.506458,0.379962,matched to sensitivity PC1
+all_flagged_excluded,max_abs_score_change_other_districts,PC1,0.000000,0.429058,0.429058,matched to sensitivity PC1
+all_flagged_excluded,component_match_abs_cosine,PC2,1.000000,0.992547,-0.007453,matched to sensitivity PC2
+all_flagged_excluded,PC2_weight,pca_enso_rain_slope_vulnerability,0.295084,0.299411,0.004327,matched to sensitivity PC2
+all_flagged_excluded,PC2_loading,pca_enso_rain_slope_vulnerability,0.329447,0.335971,0.006524,matched to sensitivity PC2
+all_flagged_excluded,PC2_weight,pca_en_deficient_frequency,0.787789,0.744425,-0.043364,matched to sensitivity PC2
+all_flagged_excluded,PC2_loading,pca_en_deficient_frequency,0.879528,0.835324,-0.044204,matched to sensitivity PC2
+all_flagged_excluded,PC2_weight,pca_agri_worker_share,-0.106753,-0.161075,-0.054323,matched to sensitivity PC2
+all_flagged_excluded,PC2_loading,pca_agri_worker_share,-0.119184,-0.180744,-0.061560,matched to sensitivity PC2
+all_flagged_excluded,PC2_weight,pca_rainfed_share,-0.503609,-0.510678,-0.007069,matched to sensitivity PC2
+all_flagged_excluded,PC2_loading,pca_rainfed_share,-0.562255,-0.573035,-0.010780,matched to sensitivity PC2
+all_flagged_excluded,PC2_weight,pca_small_holding_share,0.071793,0.135055,0.063261,matched to sensitivity PC2
+all_flagged_excluded,PC2_loading,pca_small_holding_share,0.080154,0.151546,0.071392,matched to sensitivity PC2
+all_flagged_excluded,PC2_weight,pca_literacy_vulnerability,-0.148804,-0.226292,-0.077488,matched to sensitivity PC2
+all_flagged_excluded,PC2_loading,pca_literacy_vulnerability,-0.166133,-0.253924,-0.087791,matched to sensitivity PC2
+all_flagged_excluded,score_correlation,PC2,1.000000,0.990040,-0.009960,matched to sensitivity PC2
+all_flagged_excluded,pune_score,PC2,3.572117,3.205200,-0.366916,matched to sensitivity PC2
+all_flagged_excluded,max_abs_score_change_other_districts,PC2,0.000000,0.346147,0.346147,matched to sensitivity PC2
+all_flagged_excluded,component_match_abs_cosine,PC3,1.000000,0.998943,-0.001057,matched to sensitivity PC3
+all_flagged_excluded,PC3_weight,pca_enso_rain_slope_vulnerability,0.094384,0.098692,0.004308,matched to sensitivity PC3
+all_flagged_excluded,PC3_loading,pca_enso_rain_slope_vulnerability,0.101881,0.106499,0.004618,matched to sensitivity PC3
+all_flagged_excluded,PC3_weight,pca_en_deficient_frequency,0.280306,0.251038,-0.029268,matched to sensitivity PC3
+all_flagged_excluded,PC3_loading,pca_en_deficient_frequency,0.302569,0.270896,-0.031674,matched to sensitivity PC3
+all_flagged_excluded,PC3_weight,pca_agri_worker_share,-0.490046,-0.503040,-0.012994,matched to sensitivity PC3
+all_flagged_excluded,PC3_loading,pca_agri_worker_share,-0.528967,-0.542832,-0.013865,matched to sensitivity PC3
+all_flagged_excluded,PC3_weight,pca_rainfed_share,0.638991,0.640968,0.001977,matched to sensitivity PC3
+all_flagged_excluded,PC3_loading,pca_rainfed_share,0.689743,0.691670,0.001928,matched to sensitivity PC3
+all_flagged_excluded,PC3_weight,pca_small_holding_share,-0.393954,-0.371687,0.022267,matched to sensitivity PC3
+all_flagged_excluded,PC3_loading,pca_small_holding_share,-0.425244,-0.401089,0.024155,matched to sensitivity PC3
+all_flagged_excluded,PC3_weight,pca_literacy_vulnerability,-0.329949,-0.353836,-0.023888,matched to sensitivity PC3
+all_flagged_excluded,PC3_loading,pca_literacy_vulnerability,-0.356155,-0.381826,-0.025672,matched to sensitivity PC3
+all_flagged_excluded,score_correlation,PC3,1.000000,0.998663,-0.001337,matched to sensitivity PC3
+all_flagged_excluded,pune_score,PC3,1.336293,1.139001,-0.197292,matched to sensitivity PC3
+all_flagged_excluded,max_abs_score_change_other_districts,PC3,0.000000,0.111619,0.111619,matched to sensitivity PC3
+all_flagged_excluded,pune_input,enso_rain_slope_pct_per_degC,-7.886991,-8.749072,-0.862081,
+all_flagged_excluded,pune_input,rain_en_deficient_frequency,0.722222,0.611111,-0.111111,
+all_flagged_excluded,loo_median_abs_cosine,PC1,0.999235,0.999222,-0.000013,
+all_flagged_excluded,loo_min_abs_cosine,PC1,0.947638,0.974136,0.026498,primary min when omitting Pune; sensitivity min when omitting Pune
+all_flagged_excluded,loo_runs_order_changed,PC1,0.000000,0.000000,0.000000,sensitivity: 
+all_flagged_excluded,loo_median_abs_cosine,PC2,0.994281,0.994435,0.000154,
+all_flagged_excluded,loo_min_abs_cosine,PC2,0.425989,0.427286,0.001297,primary min when omitting Pune; sensitivity min when omitting Pune
+all_flagged_excluded,loo_runs_order_changed,PC2,2.000000,1.000000,-1.000000,sensitivity: Pune
+all_flagged_excluded,loo_median_abs_cosine,PC3,0.991579,0.991268,-0.000310,
+all_flagged_excluded,loo_min_abs_cosine,PC3,0.418497,0.426185,0.007688,primary min when omitting Pune; sensitivity min when omitting Pune
+all_flagged_excluded,loo_runs_order_changed,PC3,2.000000,1.000000,-1.000000,sensitivity: Pune
+all_flagged_excluded,loo_min_plane_projection,PC2,0.925691,0.958096,0.032405,
+all_flagged_excluded,loo_min_plane_projection,PC3,0.978364,0.977590,-0.000773,

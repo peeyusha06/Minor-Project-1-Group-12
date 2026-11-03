@@ -1,0 +1,30 @@
+2026-09-26T20:53:50Z | 200 23000 | enso/oni.ascii.txt | https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt
+2026-09-26T20:53:51Z | 200 14720 | enso/RONI.ascii.txt | https://www.cpc.ncep.noaa.gov/data/indices/RONI.ascii.txt
+2026-09-26T20:53:56Z | 200 1206918 | enso/roni-info-may-2026.pdf | https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/pdf/roni-info-may-2026.pdf
+2026-09-26T20:53:59Z | 200 162972 | enso/cpc_oni_v6_episode_table_page.html | https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/oni/v6/
+2026-09-26T20:54:01Z | 200 97775 | enso/cpc_roni_page.html | https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/
+2026-09-26T20:54:02Z | 200 16813 | enso/cpc_roni_announcement_page.html | https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso/roni/announcement.php
+2026-09-26T20:54:25Z | 200 82163210 | census/DH_2011_DCHB_Village_Release_2700.xlsx | https://censusindia.gov.in/nada/index.php/catalog/830/download/36190
+2026-09-26T20:54:25Z | 200 1282866 | agriculture/agcensus/Agriculture_Census_2010-11_Maharashtra_State_Report_Argi.pdf | https://krishi.maharashtra.gov.in/Site/Upload/Pdf/Publications/Argi.pdf
+2026-09-26T20:54:27Z | 200 4319681 | agriculture/icrisat_dld/icrisat_dld_unapportioned_landuse.json | http://data.icrisat.org/dldAPI/unapportioned/landuse
+2026-09-26T20:54:30Z | 200 3775670 | agriculture/icrisat_dld/icrisat_dld_unapportioned_sourcewise-irrigated-area.json | http://data.icrisat.org/dldAPI/unapportioned/sourcewise-irrigated-area
+2026-09-26T20:54:32Z | 200 640929 | agriculture/icrisat_dld/icrisat_dld_unapportioned_operational-holdings.json | http://data.icrisat.org/dldAPI/unapportioned/operational-holdings
+2026-09-26T20:54:32Z | 200 139618 | agriculture/icrisat_dld/icrisat_dld_unapportioned_districts.json | http://data.icrisat.org/dldAPI/unapportioned/districts
+2026-09-26T20:54:32Z | 200 34934 | agriculture/icrisat_dld/icrisat_dld_about_page.html | http://data.icrisat.org/dld/src/about-dld.html
+2026-09-26T20:54:33Z | 200 10220732 | boundaries/datameet_census2011_districts/2011_Dist.shp | https://raw.githubusercontent.com/datameet/maps/master/Districts/Census_2011/2011_Dist.shp
+2026-09-26T20:54:33Z | 200 5228 | boundaries/datameet_census2011_districts/2011_Dist.shx | https://raw.githubusercontent.com/datameet/maps/master/Districts/Census_2011/2011_Dist.shx
+2026-09-26T20:54:34Z | 200 54678 | boundaries/datameet_census2011_districts/2011_Dist.dbf | https://raw.githubusercontent.com/datameet/maps/master/Districts/Census_2011/2011_Dist.dbf
+2026-09-26T20:54:34Z | 200 145 | boundaries/datameet_census2011_districts/2011_Dist.prj | https://raw.githubusercontent.com/datameet/maps/master/Districts/Census_2011/2011_Dist.prj
+2026-09-26T20:54:34Z | 200 659 | boundaries/datameet_census2011_districts/README_Districts.md | https://raw.githubusercontent.com/datameet/maps/master/Districts/README.md
+2026-09-26T20:54:34Z | 200 356364 | validation/GR_202609261117494941_drought_265_talukas_kharif2026.pdf | https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/Marathi/202609261117494941.pdf
+2026-09-26T20:54:53Z | 200 36553503 | boundaries/geoboundaries/geoBoundaries-IND-ADM2-all.zip | https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/IND/ADM2/geoBoundaries-IND-ADM2-all.zip
+2026-09-26T20:54:58Z | 200 96044975 | boundaries/geoboundaries/geoBoundaries-IND-ADM3-all.zip | https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/IND/ADM3/geoBoundaries-IND-ADM3-all.zip
+2026-09-26T20:54:59Z | 200 1767 | boundaries/geoboundaries/geoBoundaries-IND-ADM2-metadata.json | https://www.geoboundaries.org/api/current/gbOpen/IND/ADM2/
+2026-09-26T20:55:00Z | 200 1772 | boundaries/geoboundaries/geoBoundaries-IND-ADM3-metadata.json | https://www.geoboundaries.org/api/current/gbOpen/IND/ADM3/
+2026-09-26T20:55:14Z | 200 3002615 | validation/IMD_DISTRICT_RAINFALL_DISTRIBUTION_snapshot_2026-09-26_period_2026-06-01_to_2026-09-26.pdf | https://mausam.imd.gov.in/Rainfall/DISTRICT_RAINFALL_DISTRIBUTION_COUNTRY_INDIA_cd.pdf (fetched 2026-09-26)
+2026-09-27T10:53:31Z | 200 3255854 | validation/GR_201810311722349219_drought_151_talukas_kharif2018.pdf | https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/Marathi/201810311722349219.pdf
+2026-09-27T10:53:31Z | 200 3329160 | validation/GR_201810231643431719_drought_180_talukas_trigger2_2018-19.pdf | https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/Marathi/201810231643431719.pdf
+2026-09-27T10:53:31Z | 200 3242044 | validation/GR_201811061721013119_drought_268_revenue_circles_addl_2018.pdf | https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/Marathi/201811061721013119.pdf
+2026-09-27T10:56:17Z | 200 527187 | validation/GR_202310311545053419_drought_40_talukas_kharif2023.pdf | https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/Marathi/202310311545053419.pdf
+2026-09-27T10:56:17Z | 200 670577 | validation/GR_202311101718225419_drought_1021_revenue_circles_addl_2023.pdf | https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/Marathi/202311101718225419.pdf
+2026-09-27T11:06:43Z | user-download | boundaries/survey_of_india/SOI_OVSF_1M_8_Maharashtra_upto_taluk.zip | copied unchanged from project root 'Survey OF India - OVSF:1M:8 MH.zip' (downloaded manually by user from https://onlinemaps.surveyofindia.gov.in/Digital_Product_Show.aspx, product OVSF/1M/8)

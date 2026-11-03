@@ -1,0 +1,28 @@
+district_string_as_extracted,census_2011_district_code,district_name,note
+अहमदिंगर,522,Ahmednagar (Ahilyanagar),pdftotext 26.09.0 renders अहमदनगर with legacy-font glyph errors
+अमरावती,503,Amravati,
+बुलडाणा,500,Buldhana,
+िळगांव,499,Jalgaon,glyph error for जळगांव
+सातारा,527,Satara,
+बीड,523,Beed,
+अकोला,501,Akola,
+औरंगाबाद,515,Aurangabad (Chhatrapati Sambhajinagar),GR of 10 Nov 2023 still uses the old name
+िंाजशक,516,Nashik,glyph error for नाशिक
+लातूर,524,Latur,
+सोलापूर,526,Solapur,
+परभणी,513,Parbhani,
+वाजशम,502,Washim,glyph error for वाशिम
+सांगली,531,Sangli,
+पुणे,521,Pune,
+उस्मािंाबाद,525,Osmanabad (Dharashiv),glyph error for उस्मानाबाद; old name used in this GR
+धुळे,498,Dhule,
+िंांदेड,511,Nanded,glyph error for नांदेड
+कोल्हापूर,530,Kolhapur,
+िालिंा,514,Jalna,glyph error for जालना
+यवतमाळ,510,Yavatmal,
+नहगोली,512,Hingoli,glyph error for हिंगोली
+िंंदुरबार,497,Nandurbar,glyph error for नंदुरबार
+वधा,504,Wardha,glyph error for वर्धा
+िंागपूर,505,Nagpur,glyph error for नागपूर
+चंद्रपूर,509,Chandrapur,
+भंडारा,506,Bhandara,

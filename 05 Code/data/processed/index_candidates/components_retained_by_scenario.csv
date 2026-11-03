@@ -1,0 +1,7 @@
+feature_set,scenario,components_retained
+set_A,oni_v6,3
+set_A,primary,3
+set_A,pune_excluded,3
+set_B,oni_v6,4
+set_B,primary,4
+set_B,pune_excluded,4

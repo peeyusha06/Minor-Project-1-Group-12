@@ -1,0 +1,18 @@
+# Python 3.12. External tool also required: poppler 'pdftotext' (tested with 26.09.0;
+# macOS: brew install poppler, Ubuntu/Colab: apt-get install poppler-utils).
+pandas>=2.2
+numpy>=1.26
+openpyxl>=3.1
+xarray>=2024.1
+netCDF4>=1.6
+geopandas>=1.0
+pyogrio>=0.7
+shapely>=2.0
+scipy>=1.11
+scikit-learn>=1.4
+matplotlib>=3.8
+streamlit>=1.50
+pyyaml>=6.0
+beautifulsoup4>=4.12
+lxml>=5.0
+pytest>=8.0

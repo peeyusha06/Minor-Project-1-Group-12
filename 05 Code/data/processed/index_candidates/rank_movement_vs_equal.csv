@@ -1,0 +1,9 @@
+method,spearman_with_equal,median_abs_rank_move,max_abs_rank_move,largest_move_to_higher_priority,largest_move_to_lower_priority,district_with_max_move,n_districts_moving_5plus,n_negative_weights
+equal,1.000000,0.000000,0,0,0,Nandurbar,0,0
+pc1_only,0.752177,5.000000,18,18,14,Yavatmal,18,1
+A_var_sum,0.726509,4.000000,16,16,11,Gadchiroli,16,2
+A_var_dominant,0.674866,5.000000,21,21,14,Wardha,19,1
+B_abs_loading,0.992972,0.000000,5,3,5,Pune,1,0
+B_abs_all6,0.988388,0.000000,7,3,7,Pune,1,0
+C_oecd_varimax,0.934912,1.000000,10,9,10,Chhatrapati Sambhajinagar,7,0
+hazard_social,0.997861,0.000000,2,1,2,Sindhudurg,0,0

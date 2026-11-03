@@ -1,0 +1,27 @@
+feature_set,item,value
+set_A,KMO overall,0.398508
+set_A,Bartlett chi-square,35.465910
+set_A,Bartlett df,15.000000
+set_A,Bartlett p-value,0.002110
+set_A,largest |correlation| between indicators,0.452879
+set_A,KMO enso_rain_slope_pct_per_degC,0.467870
+set_A,KMO rain_en_deficient_frequency,0.223671
+set_A,KMO soc_agri_worker_share_of_workers_pct,0.391459
+set_A,KMO irr_rainfed_share_of_cropped_land_pct,0.235098
+set_A,KMO land_small_holding_share_pct,0.483468
+set_A,KMO soc_literacy_rate_7plus_pct,0.712424
+set_B,KMO overall,0.588823
+set_B,Bartlett chi-square,181.797699
+set_B,Bartlett df,45.000000
+set_B,Bartlett p-value,0.000000
+set_B,largest |correlation| between indicators,0.774788
+set_B,KMO enso_rain_slope_pct_per_degC,0.720953
+set_B,KMO rain_en_deficient_frequency,0.703140
+set_B,KMO soc_agri_worker_share_of_workers_pct,0.517977
+set_B,KMO irr_rainfed_share_of_cropped_land_pct,0.337037
+set_B,KMO land_small_holding_share_pct,0.464194
+set_B,KMO soc_literacy_rate_7plus_pct,0.408433
+set_B,KMO rain_en_max_deficit_pct,0.698966
+set_B,KMO agri_cropped_land_share_pct,0.693526
+set_B,KMO soc_marginal_worker_share_of_workers_pct,0.647219
+set_B,KMO soc_st_share_pct,0.432904

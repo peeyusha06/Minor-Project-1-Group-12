@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>ICRISAT-District Level Data</title>
+   <!-- CSS Files -->
+   <link href="../lib/css/new-style.css" rel="stylesheet">
+   <link href="../lib/css/custom1.css" rel="stylesheet">
+   <link href="../lib/css/responsive.css" rel="stylesheet">
+   <link href="../lib/css/color.css" rel="stylesheet">
+   <link href="../lib/css/all.css" rel="stylesheet">
+   <link href="../lib/css/owl.carousel.min.css" rel="stylesheet">
+   <link href="../lib/css/bootstrap.min.css" rel="stylesheet">
+   <link href="../lib/css/prettyPhoto.css" rel="stylesheet">
+   <link href="../lib/css/slick.css" rel="stylesheet">
+   <link rel="icon" href="./assets/images/favicon.ico" type="image/png">
+   <link rel="stylesheet" href="../lib/css/js/settings.css" type="text/css">
+   <link rel="stylesheet" href="../lib/css/animate.css" type="text/css">
+   <link rel="stylesheet" href="../lib/css/js/layers.css" type="text/css">
+   <link rel="stylesheet" href="../lib/css/js/navigation.css" type="text/css">
+   <link href="./assets/css/custom.min.css" rel="stylesheet">
+   <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+   <style>
+      .logo-nav-row .dropdown-menu>li>a:hover {
+         background: #097b39;
+         color: #fff;
+      }
+
+      .home3.main-footer {
+         background-size: cover;
+         background: #0e7a39 !important;
+      }
+
+      .official-members .team-box .team-txt {
+         padding: 17px 20px;
+         height: 130px;
+      }
+
+      .navbar {
+         padding: 0px 0px 0px 0px;
+         font-weight: 700;
+         margin-bottom: 0;
+         background: #f7f7f7 !important;
+      }
+
+      .about-img-logo img {
+         width: auto;
+         height: 55px;
+         margin-bottom: 15px;
+      }
+
+      .pb-10 {
+         padding-bottom: 10px;
+      }
+
+      .team-grid .team-box {
+         margin-bottom: 20px;
+      }
+
+      body h5 {
+         font-size: 16px;
+      }
+
+      @media (min-width: 320px) {
+         .item_pad {
+            padding-top: 80px;
+         }
+
+         .logo_height {
+            display: block;
+            height: 49px;
+         }
+      }
+
+      @media (min-width: 360px) {
+         .logo_height {
+            display: block;
+            height: 59px;
+         }
+      }
+
+      @media (min-width: 768px) {
+         .logo_height {
+            display: block;
+            height: 44px;
+         }
+      }
+
+      @media (min-width: 812px) {
+         .logo_height {
+            display: block;
+            height: 53px;
+         }
+      }
+
+      @media (min-width: 1024px) {
+         .logo_height {
+            display: block;
+            height: 59px;
+         }
+      }
+
+      @media (max-width: 1200px) {
+         .navbar-header {
+            float: none;
+         }
+
+         .navbar-toggle .icon-bar {
+            display: block;
+            width: 22px;
+            background: #fff;
+            height: 2px;
+            border-radius: 1px;
+         }
+
+         .logo-nav-row .navbar-nav>li>a {
+            padding: 10px 14px;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #777777;
+            font-weight: 700;
+         }
+
+         .logo-nav-row .navbar-brand {
+            padding: 4px 0px;
+            height: inherit;
+            margin-right: 0px;
+         }
+
+         .navbar-left,
+         .navbar-right {
+            float: none !important;
+         }
+
+         .navbar-toggle {
+            display: block;
+            background: #097b39;
+            margin-top: 16px;
+         }
+
+         .navbar-collapse {
+            border-top: 1px solid transparent;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+         }
+
+         .navbar-fixed-top {
+            top: 0;
+            border-width: 0 0 1px;
+         }
+
+         .navbar-collapse.collapse {
+            display: none !important;
+         }
+
+         .navbar-nav {
+            float: none !important;
+            margin-top: 7.5px;
+         }
+
+         .navbar-nav>li {
+            float: none;
+         }
+
+         .navbar-nav>li>a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+         }
+
+         .collapse.in {
+            display: block !important;
+         }
+
+         .navbar-brand {
+            display: inline-block;
+            float: none;
+         }
+
+         .navbar-form.form-inline {
+            display: inline-block;
+            border-color: transparent;
+            margin: 4px;
+            padding: 5px;
+         }
+
+         .navbar-form .form-control {
+            display: inline-block;
+            width: auto;
+            vertical-align: middle;
+         }
+
+      }
+
+      /* @media (min-width: 1200px) {
+         .logo_height {
+            display: block;
+            height: 59px;
+         }
+      }*/
+   </style>
+</head>
+
+<body>
+   <!--Wrapper Start-->
+   <div class="wrapper">
+      <!-- Page Footer Start -->
+      <section id="pageHeader">
+
+      </section>
+      <!-- Page Footer End -->
+
+      <!--Main Content Start-->
+      <div class="main-content">
+         <div class="team-details mt-100 mb-20" style="background: #fff;">
+            <div class="container">
+               <div class="row">
+                  <div class="team-details-txt m30">
+                     <div class="col-md-5">
+                        <div class="team-img"> <img src="./assets/images/4a.jpg" alt=""
+                              style="margin-top: 30px; width:100%"> </div>
+                     </div>
+                     <div class="col-md-7">
+                        <div class="team-detail">
+                           <div class="section-title">
+                              <h3>About DLD</h3>
+                              <!-- <div class="bar flipthis-highlight"></div> -->
+                           </div>
+                           <p class="text-justify"> The District Level Database (DLD) for Indian agriculture and allied
+                              sectors provides a comprehensive one-stop shop for data on rural sector that enables
+                              testing of key research hypotheses, identification of relevant districts / regions for
+                              technology dissemination, promoting rural pro-poor programs / development initiatives and
+                              identification of relevant representative districts for micro level assessment.</p>
+                           <p class="text-justify"> It acts as a link between country-level macro data and
+                              household-level micro data. The consistent recording and detail at district level makes it
+                              a powerful research response tool for priority setting and in tracking inter-district and
+                              intra-district economic changes.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="team-details" style="background: #eee;">
+            <div class="container">
+               <div class="row">
+                  <div class="team-details-txt m30">
+                     <div class="col-md-7">
+                        <div class="team-detail">
+
+                           <div class="section-title">
+                              <h3>Structure of the database</h3>
+                              <!-- <div class="bar flipthis-highlight"></div> -->
+                           </div>
+                           <p class="text-justify"> The districts in each state of the country have been divided from
+                              time to time based on political, socio-economic, linguistic and other factors. There were
+                              313 districts in the 16 states in 1966 (excluding northeastern states (except Assam) and
+                              Jammu and Kashmir).</p>
+                           <p class="text-justify"> By 2015 four new states were created from the 16 states to make it
+                              20 states and the number of districts in the 20 states increased to 571. To
+                              ensure continuity in the database for time series analysis and for spatial and temporal
+                              analysis using GIS maps, a methodology was devised for apportioning the data of the newly
+                              formed districts back to its parent district, i.e., 1966 district boundaries. </p>
+                           <p class="text-justify">Thus, the database is divided into two datasets: Apportioned database
+                              with 1966 district boundaries and unapportioned database with current district boundaries
+                              (in our case upto 2015-16). The apportioned database includes data from 1966 to 2015-16
+                              while the unapportioned database spans 1990 to 2015-16.</p>
+                           <p class="text-justify">The data on environment variables (AET, PET, PPT, etc) is available
+                              only for unapportioned data from 1956 to 2015. Besides the two data sets, another set of
+                              variables are included under ‘Additional data’, and includes data files on season wise
+                              crop area and production, break up of fruits and vegetables area and production by crop,
+                              night lights, agricultural credit etc. These data are unapportioned and the years covered
+                              are for recent years and are also not uniform across data files.</p>
+                        </div>
+                     </div>
+                     <div class="col-md-5">
+                        <div class="team-img">
+                           <img src="./assets/images/database_structure.png" alt=""
+                              style="width: 100%;margin-top: 45px;">
+                           <h4><small>Notes: </small></h4>
+                           <h6><small><i><b>1. Unapportioned data:</b> Includes data for all districts as on
+                                    2015-16</i></small></h6>
+                           <h6><small><i><b>2. Apportioned data:</b> Includes data for 1966 base district boundaries
+                                    only i.e., data for all districts formed after 1966 is given back to their parent
+                                    district/ districts and removed from the file. </i></small></h6>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="team-details" style="background: #fff;">
+            <div class="container">
+               <div class="row">
+                  <div class="team-details-txt m30">
+                     <div class="col-md-12">
+                        <div class="team-detail">
+                           <div class="section-title">
+                              <h3>Database development and partners</h3>
+                              <!-- <div class="bar flipthis-highlight"></div> -->
+                           </div>
+                           <p class="text-justify">The current update of the district level database from 2010 onwards
+                              is being carried
+                              out under an ICRISAT–TCI (Tata Cornell Institute of Agriculture and Nutrition) joint
+                              collaborative project on “Updating the meso-level database for India and developing
+                              an interactive tool for public access and use”. A unique feature of this update
+                              besides data generation and maintenance is the development of an interactive user
+                              friendly web tool for easy data access, retrieval, and storage of the data.
+                              Visualization of graphs and spatial maps will be an additional feature of the web tool.
+                           </p>
+                           <p class="text-justify">Historically since 1980 the district level database is being
+                              maintained by ICRISAT
+                              with data going back to 1966 with funding support under various bilateral projects
+                              and supported by several donor agencies and intuitions. For example, the World Bank,
+                              System-wide Livestock Program (SLP-CGIAR), BMGF (Bill and Melinda Gates
+                              Foundation) in collaboration with the National Institute of Agricultural Economics and
+                              Policy Research (NIAP) a think tank of the Indian Council of Agricultural Research
+                              (ICAR), New Delhi. A number of research papers/articles have been published using this
+                              database by lead research institute in India and elsewhere.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row mb-20">
+                  <div class="col-sm-2  text-center about-img-logo">
+                     <img src="./assets/images/1.png">
+                  </div>
+                  <div class="col-sm-2  text-center about-img-logo">
+                     <img src="./assets/images/2.png">
+                  </div>
+                  <div class="col-sm-2  text-center about-img-logo">
+                     <img src="./assets/images\cgiar_img.png">
+                  </div>
+                  <div class="col-sm-2  text-center about-img-logo">
+                     <img src="./assets/images/3.png">
+                  </div>
+                  <div class="col-sm-2  text-center about-img-logo">
+                     <img src="./assets/images/4.png">
+                  </div>
+                  <div class="col-sm-2  text-center about-img-logo">
+                     <img src="./assets/images/5.png">
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="team-details" style="background: #fff;">
+            <div class="container">
+               <div class="row">
+                  <div class="team-details-txt m30">
+                     <div class="col-md-12">
+                        <div class="team-detail">
+                           <div class="section-title">
+                              <h3>Acknowledgement</h3>
+                              <!-- <div class="bar flipthis-highlight"></div> -->
+                           </div>
+                           <p class="text-justify">This work was undertaken as part of the CGIAR Research Programs on
+                              <a href="http://gldc.cgiar.org/"> Grain Legumes and Dryland Crereals (GLDC) </a> led by
+                              ICRISAT and <a href="https://pim.cgiar.org/"> Policies, Institutions, and Markets (PIM)
+                              </a> led by the International Food Policy Research Institute (IFPRI).
+                              Funding support for this web tool was provided by Tata -Cornell Institute (TCI) and CGIAR
+                              Research Program on Grain legumes and Dryland cereals (GLDC).</p>
+
+                           <p class="text-justify">This web tool has not gone through IFPRI’s standard peer-review
+                              procedure. The data avaliable here has been collated from different sources by ICRISAT.
+                              While great effort was taken to obtain high-quality data, the accuracy or reliability of
+                              the data is not guaranteed or warranted in any way. The data are provided ‘as is’ and in
+                              no event shall ICRISAT, GLDC, PIM, TCI and CGIAR doesn’t bear responsibility for any
+                              nonconformities, defects and errors in the data and be liable for any damages resulting
+                              from use of the data. </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+         <div class="team-details explore-community" style="background: #eee;">
+            <div class="container">
+               <div class="row">
+                  <div class="team-details-txt">
+                     <div class="col-md-12">
+                        <div class="section-title pt-20 pb-10">
+                           <h3>Team</h3>
+                           <!-- <div class="bar flipthis-highlight"></div> -->
+                        </div>
+                        <div class="team-grid official-members">
+                           <div class="row">
+                              <div class="col-sm-3">
+                                 <div class="team-box">
+                                    <img class="img-thumbnail" src="./assets/images/team/SNedumaran.jpg"
+                                       style="width: 100%; height: 300px">
+                                    <div class="team-txt">
+                                       <h5>S Nedumaran</h5>
+                                       <strong class="dep">Senior Scientist (Economics) <br /> ICRISAT</strong>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-3">
+                                 <div class="team-box">
+                                    <img class="img-thumbnail" src="./assets/images/team/PPR.jpg"
+                                       style="width: 100%; height: 300px">
+                                    <div class="team-txt">
+                                       <h5> P Parthasarathy Rao</h5>
+                                       <strong class="dep">Expert Consultant <br /> ICRISAT</strong>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-3">
+                                 <div class="team-box">
+                                    <img class="img-thumbnail" src="./assets/images/team/Padmaja.jpg"
+                                       style="width: 100%; height: 300px">
+                                    <div class="team-txt">
+                                       <h5>R Padmaja</h5>
+                                       <strong class="dep">Senior scientist (Sociology) <br /> ICRISAT</strong>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-3">
+                                 <div class="team-box">
+                                    <img class="img-thumbnail" src="./assets/images/team/Murali.jpg"
+                                       style="width: 100%; height: 300px">
+                                    <div class="team-txt">
+                                       <h5>Murali Krishna Gumma</h5>
+                                       <strong class="dep">Senior Scientist (Remote Sensing) <br /> ICRISAT</strong>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="row">
+                              <div class="col-sm-3">
+                                 <div class="team-box">
+                                    <img class="img-thumbnail" src="./assets/images/team/man-placeholder.png"
+                                       style="width: 100%; height: 300px;opacity: 0.5;">
+                                    <div class="team-txt">
+                                       <h5> Irshad Ahmed</h5>
+                                       <strong class="dep">Manager, GIS <br /> ICRISAT</strong>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-3">
+                                 <div class="team-box">
+                                    <img class="img-thumbnail" src="./assets/images/team/AbhishekRathore.jpg"
+                                       style="width: 100%; height: 300px">
+                                    <div class="team-txt">
+                                       <h5>Abhishek Rathore</h5>
+                                       <strong class="dep">Principle scientist (Statistics and Data management) <br />
+                                          ICRISAT</strong>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-3">
+                                 <div class="team-box">
+                                    <img class="img-thumbnail" src="./assets/images/team/man-placeholder.png"
+                                       style="width: 100%; height: 300px;opacity: 0.5;">
+                                    <div class="team-txt">
+                                       <h5>Satish Nagaraji</h5>
+                                       <strong class="dep">Senior Manager, Digital Agriculture (M&E and Tools) <br />
+                                          ICRISAT</strong>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-3">
+                                 <div class="team-box">
+                                    <img class="img-thumbnail" src="./assets/images/team/Jyosthnaa.jpg"
+                                       style="width: 100%; height: 300px">
+                                    <div class="team-txt">
+                                       <h5> P Jyosthnaa </h5>
+                                       <strong class="dep">Senior Scientific officer <br /> ICRISAT</strong>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="row">
+                              <div class="col-sm-3">
+                                 <div class="team-box">
+                                    <img class="img-thumbnail" src="./assets/images/team/EJagadeesh.jpg"
+                                       style="width: 100%; height: 300px">
+                                    <div class="team-txt">
+                                       <h5>E Jagadeesh</h5>
+                                       <strong class="dep">Consultant <br /> ICRISAT</strong>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-3">
+                                 <div class="team-box">
+                                    <img class="img-thumbnail" src="./assets/images/team/chaitanya.png"
+                                       style="width: 100%; height: 300px">
+                                    <div class="team-txt">
+                                       <h5>Chaitanya Sarma</h5>
+                                       <strong class="dep">Programmer <br /> ICRISAT</strong>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-3">
+                                 <div class="team-box">
+                                    <img class="img-thumbnail" src="./assets/images/team/man-placeholder.png"
+                                       style="width: 100%; height: 300px;opacity: 0.5;">
+                                    <div class="team-txt">
+                                       <h5>Mathew Abraham</h5>
+                                       <strong class="dep">Asst. Director <br/> Tata Cornell Institute of Nutrition and
+                                          Agriculture (TCI)</strong>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-3">
+                                 <div class="team-box">
+                                    <img class="img-thumbnail" src="./assets/images/team/AndaleebRahman.jpg"
+                                       style="width: 100%; height: 300px">
+                                    <div class="team-txt">
+                                       <h5>Andaleeb Rahman</h5>
+                                       <strong class="dep">Post Doctoral Associate<br/> Tata Cornell Institute of Nutrition
+                                          and Agriculture (TCI)</strong>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-3">
+                                 <div class="team-box">
+                                    <img class="img-thumbnail" src="./assets/images/team/KieraCrowley.jpg"
+                                       style="width: 100%; height: 300px">
+                                    <div class="team-txt">
+                                       <h5>Kiera Crowley</h5>
+                                       <strong class="dep">Research Support Specialist<br/> Tata Cornell Institute of
+                                          Nutrition and Agriculture (TCI)</strong>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-3">
+                                 <div class="team-box">
+                                    <img class="img-thumbnail" src="./assets/images/team/arunkiran.JPG"
+                                       style="width: 100%; height: 300px">
+                                    <div class="team-txt">
+                                       <h5>Arun Kiran</h5>
+                                       <strong class="dep">Consultant<br/>ICRISAT</strong>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+
+
+            <div class="team-details" style="background: #fff;">
+               <div class="container">
+                  <div class="row">
+                     <div class="team-details-txt m30">
+                        <div class="col-sm-12">
+                           <div class="team-detail">
+                              <div class="section-title">
+                                 <h3> Disclaimer and terms</h3>
+                                 <!-- <div class="bar flipthis-highlight"></div> -->
+                              </div>
+                              <p class="text-justify">Several data sources were utilized to compile the database. A
+                                 common source for some of the key variables is from the Directorate of Economics and
+                                 Statistics, Ministry of Agriculture and Farmers Welfare, Government of India.</p>
+                              <p class="text-justify">Additionally, for several variables and for the latest available
+                                 years, staff working on this project had to visit offices of the State Directorates of
+                                 Agriculture, State Bureaus of Economics and Statistics, Department of Animal husbandry,
+                                 Horticulture, etc.</p>
+                              <p class="text-justify">Details on the sources for each state are given in the section on
+                                 ‘data sources’ in the data documentation manual. The support and cooperation extended
+                                 by the state departments visited are highly appreciated, and we take this opportunity
+                                 to thank them for enabling the update. But for their cooperation, this database would
+                                 not have been compiled.</p>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="team-detail">
+                              <div class="section-title">
+                                 <h3>Disclaimer for Data</h3>
+                                 <!-- <div class="bar flipthis-highlight"></div> -->
+                              </div>
+                              <p class="text-justify">These data and documents are licensed under a Creative Commons
+                                 Attribution 4.0 International license. You are free to copy, distribute and transmit
+                                 the data as long as you acknowledge the ICRISAT through DOI provided in this page.
+                                 While utmost care has been taken by ICRISAT and data authors while collecting and
+                                 compiling the data, the data is however offered "as it is" with no express or implied
+                                 warranty. In no event shall the data authors, ICRISAT, or relevant funding agencies
+                                 will be liable for any actual, incidental or consequential damages arising from use of
+                                 the data. By using this data source, the user expressly acknowledges that the Data may
+                                 contain some nonconformities, defects, or errors. No warranty is given that the data
+                                 will meet the user's needs or expectations or that all nonconformities, defects, or
+                                 errors can or will be corrected. The user should always verify actual data. Therefore,
+                                 the user bears all responsibility in determining whether the data is fit for the user’s
+                                 intended use. The user of the data should use the related publications (if any) as a
+                                 baseline for their analysis whenever possible. Doing so will be an added safeguard
+                                 against misinterpretation of the data.</p>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="team-detail">
+                              <div class="section-title">
+                                 <h3>Disclaimer for Map</h3>
+                                 <!-- <div class="bar flipthis-highlight"></div> -->
+                              </div>
+                              <p class="text-justify">The opinions in this publication are those of the authors and not
+                                 necessarily those of ICRISAT or National Remote Sensing Agency (NRSA) or UK Department
+                                 for International Development (DFID). The designations employed and the presentation of
+                                 the material in this publication do not imply the expression of any opinion whatsoever
+                                 on the part of ICRISAT or NRSA or DFID concerning the legal status of any country,
+                                 territory, city, or area, or of its authorities, or concerning the delimitation of its
+                                 frontiers or boundaries. The maps are not intended to predicate political boundaries,
+                                 and the publishers hold no responsibility whatsoever in this regard. Where trade names
+                                 are used this does not constitute endorsement of or discrimination against any product
+                                 by ICRISAT or NRSA or DFID.</p>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Page Footer Start -->
+            <section id="pageFooter">
+
+            </section>
+            <!-- Page Footer End -->
+         </div>
+         <!--Wrapper End-->
+
+         <div class="overlay"></div>
+         <!-- JS -->
+         <!-- JS -->
+         <script src="../lib/js/jquery.min.js"></script>
+         <script src="../lib/js/bootstrap.min.js"></script>
+         <script src="../lib//js/owl.carousel.min.js"></script>
+         <script src="../lib/js/jquery.prettyPhoto.js"></script>
+         <script src="../lib/js/slick.min.js"></script>
+         <script src="../lib/js/custom.js"></script>
+         <span id="jstip"></span>
+         <!--Rev Slider Start-->
+         <script type="text/javascript" src="../lib/js/jquery.themepunch.tools.min.js"></script>
+         <script type="text/javascript" src="../lib/js/jquery.themepunch.revolution.min.js"></script>
+         <script type="text/javascript" src="../lib/js/rev-slider.js"></script>
+         <script type="text/javascript" src="../lib/js/revolution.extension.actions.min.js"></script>
+         <script type="text/javascript" src="../lib/js/revolution.extension.carousel.min.js"></script>
+         <script type="text/javascript" src="../lib/js/revolution.extension.kenburn.min.js"></script>
+         <script type="text/javascript" src="../lib/js/revolution.extension.layeranimation.min.js"></script>
+         <script type="text/javascript" src="../lib/js/revolution.extension.migration.min.js"></script>
+         <script type="text/javascript" src="../lib/js/revolution.extension.navigation.min.js"></script>
+         <script type="text/javascript" src="../lib/js/revolution.extension.parallax.min.js"></script>
+         <script type="text/javascript" src="../lib/js/revolution.extension.slideanims.min.js"></script>
+         <script type="text/javascript" src="../lib/js/revolution.extension.video.min.js"></script>
+         <!--scroll-top script-->
+         <script src="header-footer/header.js"></script>
+         <script src="header-footer/footer.js"></script>
+         <!--header-footer script-->
+</body>
+
+</html>

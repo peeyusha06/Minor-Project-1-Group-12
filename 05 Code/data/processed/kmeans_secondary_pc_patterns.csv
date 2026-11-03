@@ -1,0 +1,35 @@
+district_id,current_district_name,PC1,PC2,PC3,pattern,vulnerability_group,silhouette_score_all
+509,Chandrapur,0.028869,0.310213,-0.111008,Pattern A,Medium Vulnerability,0.282101
+508,Gadchiroli,0.287700,0.099075,-1.905095,Pattern A,Medium Vulnerability,0.282101
+499,Jalgaon,0.343385,-1.216501,-0.313780,Pattern A,Medium Vulnerability,0.282101
+504,Wardha,0.453025,-0.125650,1.534079,Pattern A,Medium Vulnerability,0.282101
+500,Buldhana,0.506875,-0.495182,0.222752,Pattern A,Medium Vulnerability,0.282101
+522,Ahilyanagar,0.814509,1.690096,-0.869756,Pattern A,High Vulnerability,0.282101
+498,Dhule,0.854193,-1.500633,-0.520421,Pattern A,Medium Vulnerability,0.282101
+502,Washim,1.030681,-0.053304,0.455808,Pattern A,Medium Vulnerability,0.282101
+511,Nanded,1.093891,-0.453600,-0.092118,Pattern A,High Vulnerability,0.282101
+512,Hingoli,1.159953,-0.907214,-0.218196,Pattern A,High Vulnerability,0.282101
+510,Yavatmal,1.168167,-1.100749,0.845543,Pattern A,Medium Vulnerability,0.282101
+523,Beed,1.565629,1.335447,-0.226041,Pattern A,High Vulnerability,0.282101
+514,Jalna,1.646026,-0.042540,-0.531098,Pattern A,High Vulnerability,0.282101
+526,Solapur,1.802909,1.797366,0.343720,Pattern A,High Vulnerability,0.282101
+524,Latur,1.803429,0.607459,0.614891,Pattern A,High Vulnerability,0.282101
+513,Parbhani,1.806428,-0.395610,-0.082034,Pattern A,High Vulnerability,0.282101
+497,Nandurbar,2.142660,-0.879749,-0.743431,Pattern A,High Vulnerability,0.282101
+525,Dharashiv,2.421210,1.207270,0.780672,Pattern A,High Vulnerability,0.282101
+507,Gondia,-2.268067,0.330333,-2.637899,Pattern B,Low Vulnerability,0.282101
+530,Kolhapur,-1.926995,0.034135,-0.812352,Pattern B,Medium Vulnerability,0.282101
+506,Bhandara,-1.906948,0.726982,-2.640134,Pattern B,Low Vulnerability,0.282101
+521,Pune,-1.886419,3.572117,1.336293,Pattern B,Medium Vulnerability,0.282101
+527,Satara,-1.381437,1.164353,-1.021731,Pattern B,Medium Vulnerability,0.282101
+517,Thane,-2.895341,-0.477560,2.478740,Pattern C,Low Vulnerability,0.282101
+520,Raigad,-2.020098,-0.482798,0.854577,Pattern C,Medium Vulnerability,0.282101
+529,Sindhudurg,-1.566946,-1.825281,0.234280,Pattern C,Medium Vulnerability,0.282101
+505,Nagpur,-1.511548,0.368438,1.368734,Pattern C,Low Vulnerability,0.282101
+528,Ratnagiri,-0.922725,-2.008320,0.157884,Pattern C,Medium Vulnerability,0.282101
+681,Palghar,-0.836290,-0.832795,1.042791,Pattern C,Medium Vulnerability,0.282101
+516,Nashik,-0.659479,0.499984,-0.192727,Pattern C,Medium Vulnerability,0.282101
+515,Chhatrapati Sambhajinagar,-0.385028,-1.208161,-0.555736,Pattern C,Medium Vulnerability,0.282101
+503,Amravati,-0.340224,-0.135782,0.490609,Pattern C,Medium Vulnerability,0.282101
+531,Sangli,-0.279573,-0.110156,-0.448286,Pattern C,Medium Vulnerability,0.282101
+501,Akola,-0.142421,0.508317,1.160469,Pattern C,Medium Vulnerability,0.282101

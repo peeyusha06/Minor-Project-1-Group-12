@@ -1,0 +1,7 @@
+year,role,drought_measure,n_districts,n_districts_with_declaration,spearman_rho,spearman_p_two_sided,pearson_r,pearson_p_two_sided,n_low,mean_low,median_low,share_with_declaration_low,n_medium,mean_medium,median_medium,share_with_declaration_medium,n_high,mean_high,median_high,share_with_declaration_high
+2018,historical,"declared taluka share (severe + moderate), final GR 31-10-2018",34,26,0.585,0.0,0.541,0.001,4,0.054,0.0,0.25,20,0.39,0.366,0.75,10,0.657,0.726,1.0
+2023,historical,"declared taluka share (severe + moderate), final GR 31-10-2023",34,15,0.45,0.008,0.44,0.009,4,0.0,0.0,0.0,20,0.1,0.0,0.45,10,0.199,0.133,0.6
+2018,"historical, secondary measure","severe-only taluka share, final GR 31-10-2018",34,21,0.591,0.0,0.57,0.0,4,0.036,0.0,0.25,20,0.233,0.069,0.55,10,0.605,0.726,0.9
+2023,"historical, secondary measure","severe-only taluka share, final GR 31-10-2023",34,10,0.428,0.012,0.507,0.002,4,0.0,0.0,0.0,20,0.032,0.0,0.2,10,0.181,0.133,0.6
+2026,HOLDOUT,"declared taluka share (Trigger-1), GR 25-09-2026",34,32,0.545,0.001,0.503,0.002,4,0.388,0.277,0.75,20,0.696,0.838,0.95,10,0.988,1.0,1.0
+2018+2023,"historical, additional pooled analysis",mean of 2018 and 2023 declared taluka shares,34,27,0.572,0.0,0.566,0.0,4,0.027,0.0,0.25,20,0.245,0.207,0.8,10,0.428,0.405,1.0

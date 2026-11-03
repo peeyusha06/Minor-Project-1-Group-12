@@ -1,0 +1,7 @@
+comparison,spearman_with_primary,max_abs_rank_change,district_with_max_change,n_districts_moving_5plus,n_changing_group,changed_districts
+equal weights,0.993,5,Pune,1,2,Wardha (Medium -> Low); Hingoli (High -> Medium)
+OECD/JRC factor weights,0.934,10,Chhatrapati Sambhajinagar,7,2,Buldhana (Medium -> High); Washim (Medium -> High)
+hazard + social,0.991,6,Pune,1,1,Hingoli (High -> Medium)
+"PCA |loading|, all 6 components",0.995,3,Gadchiroli,0,1,Wardha (Medium -> Low)
+Pune-excluded rainfall,0.995,3,Gadchiroli,0,1,Hingoli (High -> Medium)
+ONI v6 instead of RONI,0.961,6,Dhule,4,4,Buldhana (Medium -> High); Washim (Medium -> High); Solapur (High -> Medium); Satara (Medium -> High)

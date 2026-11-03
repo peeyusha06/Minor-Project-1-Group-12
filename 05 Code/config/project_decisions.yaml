@@ -1,0 +1,326 @@
+# =====================================================================
+# PROJECT DECISION CONFIGURATION
+# Artificial Intelligence-Driven Vulnerability Index Mapping for Districts in
+# Maharashtra to El Nino Droughts Using Socioeconomic and Climatic Principal
+# Component Analysis
+# Study scope: Maharashtra, district level (title changed from the India-wide
+# 'AI-Driven ... Climatic PCA' version on 2026-10-08 to match the scope and the
+# journal's no-acronym title advice).
+#
+# Each methodological choice is recorded with:
+#   options   - the alternatives considered (kept for reference / sensitivity runs)
+#   active    - the value used for the PRIMARY analysis (top-level outputs)
+#   status    - FIXED (project decision taken) or UNRESOLVED
+#   rationale - why the active value was chosen
+# The pipeline still builds the alternatives under data/interim/variants/
+# (geography A/B x RONI/ONI v6) for sensitivity checks only.
+# =====================================================================
+
+meta:
+  config_version: 3
+  created: "2026-09-27"
+  primary_decisions_fixed: "2026-09-27 (project team decisions after the feature-selection audit)"
+  index_decisions_fixed: "2026-09-27 (project team decisions after the PCA weighting-method comparison)"
+  study_area: "Maharashtra (Census 2011 state code 27)"
+
+decisions:
+
+  district_geography:
+    options:
+      A: "Census 2011 geography - 35 districts; Palghar remains inside Thane (census code 517)"
+      B: "Current geography - 36 districts; Palghar (LGD 681) separated from Thane"
+    active: B
+    status: FIXED
+    build_all_options: true
+    rationale: >
+      Current administrative geography, matching the Survey of India boundaries and the district
+      lists in the 2023/2026 drought GRs. Palghar is reconstructed from its 8 official Census 2011
+      sub-districts in every source (Census PCA sub-district rows, Village Directory sub-district
+      codes, Agriculture Census Table 26 tahsil rows, Survey of India Palghar polygon).
+      Geography A is still built for sensitivity checks only.
+
+  exclude_mumbai_from_index:
+    options:
+      exclude: "Keep Mumbai City (519) and Mumbai Suburban (518) in all tables but flag them out of the PCA/index scope"
+      include: "Include them in the index scope (agricultural variables would be missing for both)"
+    active: exclude
+    status: FIXED
+    rationale: >
+      The Village Directory has no villages and the Agriculture Census report no holdings for either
+      district, so the agricultural and landholding variables do not exist. Both stay in the master
+      tables with in_index_scope = False. Primary PCA sample = 36 - 2 = 34 districts.
+
+  enso_index:
+    options:
+      RONI: "NOAA CPC Relative Oceanic Nino Index, ERSST.v6 (official NOAA ENSO index since 1 Feb 2026, NWS PIS 26-05)"
+      ONI_v6: "NOAA CPC Oceanic Nino Index, ERSST.v6"
+    active: RONI
+    status: FIXED
+    build_all_options: true
+    rationale: >
+      RONI is NOAA's current official ENSO index. ONI v6 is kept only as a sensitivity cross-check;
+      the two are never mixed in one feature set.
+
+  enso_episode_rule:
+    description: >
+      NOAA CPC rule: a season is warm (El Nino) when the index, rounded to 0.1 degC, is >= +0.5 for a
+      run of at least 5 consecutive overlapping 3-month seasons (cold: <= -0.5). Rounding follows
+      CPC's published tables (verified: halves round toward +infinity, e.g. 0.45 -> 0.5,
+      -0.45 -> -0.4); this reproduces all 919 cells of the CPC ONI v6 episode table and all El Nino
+      cells of the RONI table.
+    threshold_degC: 0.5
+    min_consecutive_seasons: 5
+    rounding_decimals: 1
+    rounding_mode: half_toward_positive_infinity
+    status: FIXED
+
+  enso_monsoon_year_rule:
+    description: >
+      PROJECT-SPECIFIC rule (NOT a NOAA rule) mapping NOAA warm episodes to Indian summer monsoon
+      years. The only 3-month seasons lying entirely inside June-September are JJA and JAS.
+    options:
+      all_JJA_JAS: "Year is an El Nino monsoon year if BOTH JJA and JAS are inside a NOAA warm episode"
+      any_JJA_JAS: "Year is an El Nino monsoon year if EITHER JJA or JAS is inside a NOAA warm episode"
+    active: all_JJA_JAS
+    status: FIXED
+    rationale: >
+      Requires El Nino conditions throughout the monsoon core. The 'any' rule is still reported in
+      data/interim/enso_index_comparison.csv for reference.
+
+  study_period:
+    first_year: 1950
+    last_year: 2024
+    status: FIXED
+    rationale: >
+      Primary study period 1950-2024. 1950 is the first year of both NOAA ENSO series. 2024 is the
+      last year that IMD's download page states as available (1901-2024). The 2025 IMD file stays in
+      data/raw and may be used only in a sensitivity appendix; it does not enter the primary
+      rainfall tables, baseline, ENSO features, PCA inputs or index. 2026 is validation holdout only.
+    sensitivity_only_years: [2025]
+    holdout_only_years: [2026]
+
+  rainfall_baseline:
+    options:
+      "1971-2020": "IMD's current Long Period Average period (IMD LRF press release via PIB)"
+      "1961-2010": "Previous IMD LPA period"
+      "1951-2020": "Longest fully available 30+ year window"
+    active: "1971-2020"
+    first_year: 1971
+    last_year: 2020
+    status: FIXED
+    rationale: >
+      Each district's own mean June-September rainfall over 1971-2020, computed from the IMD
+      gridded data (IMD's current normal/LPA period). El Nino years are included in the baseline,
+      as in IMD's LPA. Prototype 'Normal' values are not used.
+
+  monsoon_months:
+    months: [6, 7, 8, 9]
+    status: FIXED
+
+  rainfall_spatial_aggregation:
+    method: area_weighted_mean
+    description: >
+      Each 0.25 x 0.25 degree grid cell is represented by its box around the grid point.
+      Weight = area of the cell box intersecting the district polygon, computed in an
+      Albers equal-area projection centred on Maharashtra. For each day the district value is
+      the weighted mean over cells with valid (non -999) data; weights are renormalised over
+      valid cells.
+    equal_area_crs: "+proj=aea +lat_0=18 +lon_0=76 +lat_1=16 +lat_2=21 +datum=WGS84 +units=m +no_defs"
+    status: FIXED
+
+  deficient_monsoon_threshold:
+    departure_pct: -20
+    comparison: "unrounded: departure_pct <= -20 (no rounding before the comparison)"
+    source: "IMD category legend: Deficient = -59% to -20% (in data/raw/validation IMD district PDF)"
+    status: FIXED
+    rationale: >
+      IMD's 'Deficient' lower bound. The exact floating-point departure is compared, so a departure
+      of -19.6% is NOT deficient (IMD publishes rounded percentages; the project uses the unrounded value).
+
+  rainfall_extreme_values:
+    description: >
+      Some district-years in the official IMD gridded product are implausibly high (e.g. Pune 2005:
+      4,225 mm June-September vs a 867 mm baseline; the grid cell containing Pune city records
+      6,344 mm with 23 days > 100 mm; Jalna 1962: 2,465 mm vs 625 mm). No published correction was
+      found (NOT VERIFIED whether these are errors). Values are never altered; district-years above
+      flag_ratio x baseline are listed in rainfall_extreme_district_years.csv.
+      Very low district-years (below low_flag_ratio x baseline) are listed for REVIEW ONLY and are never
+      excluded: many are real droughts (e.g. 1972 across Marathwada), while some look doubtful
+      (e.g. Ratnagiri 2008 at 22% of baseline).
+    flag_ratio: 2.0
+    low_flag_ratio: 0.4
+    options:
+      keep: "Use all published values (baseline includes flagged years)"
+      exclude_flagged_from_baseline: "Keep values but compute the baseline without flagged district-years"
+    active: keep
+    status: FIXED
+    rationale: >
+      Primary analysis keeps all published IMD values. The baseline excluding flagged high
+      district-years is still calculated (baseline_monsoon_excl_flagged_mm) for sensitivity only.
+
+  spi:
+    distribution: gamma
+    calibration_period: "same as rainfall_baseline"
+    status: FIXED
+
+  socioeconomic_reference:
+    source: "Census 2011 Primary Census Abstract"
+    year: 2011
+    status: FIXED
+
+  agricultural_reference:
+    source: "Census 2011 Village Directory (Maharashtra release 2700)"
+    year: 2011
+    status: FIXED
+
+  landholding_reference:
+    source: "Agriculture Census 2010-11 Maharashtra State Report"
+    year: "2010-11"
+    small_holding_definition: "Marginal (< 1.0 ha) + Small (1.0-2.0 ha) = holdings below 2.0 ha (size classes verified on report page 1)"
+    status: FIXED
+
+  marginal_worker_denominator:
+    options:
+      workers: "Marginal workers / total workers x 100 (share of the workforce that is marginal)"
+      population: "Marginal workers / total population x 100 (definition used in the 5-district prototype)"
+    active: workers
+    status: FIXED
+    build_all_options: true
+    rationale: "Matches the variable's name and the usual Census interpretation; population version kept for comparison only."
+
+  agricultural_worker_denominator:
+    options:
+      workers: "(Cultivators + agricultural labourers, main + marginal) / total workers x 100"
+      population: "(Cultivators + agricultural labourers, main + marginal) / total population x 100"
+    active: workers
+    status: FIXED
+    build_all_options: true
+    rationale: "Same formula as the prototype (verified); population version kept for comparison only."
+
+  irrigation_representation:
+    options:
+      rainfed: "irr_rainfed_share_of_cropped_land_pct (higher = more vulnerable)"
+      irrigated: "irr_irrigated_share_of_cropped_land_pct (higher = less vulnerable; = 100 - rainfed)"
+    active: rainfed
+    status: FIXED
+
+  village_directory_irrigation_labels:
+    description: >
+      In the raw file the columns labelled 'Total Unirrigated Land Area (in Hectares)' and
+      'Area Irrigated by Source (in Hectares)' are swapped. Evidence: in 43,661 of 43,665
+      villages the sum of source-wise irrigated areas (canals, wells/tube wells, tanks,
+      waterfall, other) equals the column labelled 'Total Unirrigated'. The raw file is never
+      edited; processing code maps raw -> analytical fields explicitly.
+    mapping:
+      irrigated_area_ha: "Total Unirrigated Land Area (in Hectares)"
+      unirrigated_area_ha: "Area Irrigated by Source (in Hectares)"
+    status: FIXED
+
+  village_directory_negative_values:
+    options:
+      keep_raw: "Sum raw values as published (negative unirrigated values reduce the district total)"
+      clip_irrigated_to_nas: "Per village, cap irrigated area at net area sown and set negative unirrigated to 0"
+    active: keep_raw
+    status: FIXED
+    rationale: "Published values kept exactly; the QA table reports the clipped alternative and the difference."
+
+  missing_value_policy:
+    rule: >
+      No imputation or interpolation. Missing values stay NaN, and each table carries
+      availability flags. Features are computed only from available observations; the
+      number of observations used is reported where relevant (e.g. n_elnino_years).
+    status: FIXED
+
+  boundary_source:
+    options:
+      survey_of_india: "Survey of India Administrative Boundary Database OVSF/1M/8 (official; 36 districts + 359 sub-districts; LGD codes = Census 2011 codes)"
+      datameet_2011: "DataMeet Census 2011 districts (community; 35 districts; censuscode field)"
+    active: survey_of_india
+    status: FIXED
+    rationale: >
+      Official source, code-keyed to Census 2011, with Palghar as its own polygon (LGD 681).
+      DataMeet is kept as a cross-check only.
+    known_issues:
+      - "SOI boundaries are current (2025), not 2011; outer district lines may have been redrawn slightly since 2011."
+      - "SOI SUBDISTRICT layer: Dhule's 4 sub-districts carry DIST_LGD 598 instead of 498 (only the district layer is used)."
+
+  pca_primary:
+    feature_set: set_A
+    features:
+      - enso_rain_slope_pct_per_degC
+      - rain_en_deficient_frequency
+      - soc_agri_worker_share_of_workers_pct
+      - irr_rainfed_share_of_cropped_land_pct
+      - land_small_holding_share_pct
+      - soc_literacy_rate_7plus_pct
+    sensitivity_feature_set: set_B   # Set A + rain_en_max_deficit_pct, agri_cropped_land_share_pct,
+                                     # soc_marginal_worker_share_of_workers_pct, soc_st_share_pct
+    # direction alignment: multiply so that higher value = greater vulnerability
+    sign_multipliers:
+      enso_rain_slope_pct_per_degC: -1
+      rain_en_deficient_frequency: 1
+      soc_agri_worker_share_of_workers_pct: 1
+      irr_rainfed_share_of_cropped_land_pct: 1
+      land_small_holding_share_pct: 1
+      soc_literacy_rate_7plus_pct: -1
+    log_transform: none
+    log_transform_rationale: >
+      Log transformation was considered (proposal slide 12) but not used: the six variables are
+      interpretable percentages or statistical measures (a slope in % per degC, a frequency, shares),
+      and transforming them would reduce direct interpretability.
+    scaling: "sklearn StandardScaler (mean 0, standard deviation 1) on the 6 direction-aligned variables"
+    stability_check: "leave-one-district-out PCA"
+    kmeans: "not run yet; to be decided after inspecting the PCA"
+    status: FIXED
+
+  vulnerability_index:
+    feature_set: set_A                      # the six pca_primary features, direction-aligned (higher = more vulnerable)
+    standardization: "sklearn StandardScaler on the six aligned indicators (34 in-scope districts)"
+    weighting_method: pca_abs_loading
+    weighting_formula: >
+      loading(j,k) = eigenvector(j,k) x sqrt(eigenvalue(k));
+      raw_weight(j) = sum over k = 1..3 of explained_variance_ratio(k) x |loading(j,k)|;
+      weight(j) = raw_weight(j) / sum(raw_weight). All weights positive, sum = 1.
+    components_retained: 3
+    retention_rationale: >
+      Kaiser (eigenvalue > 1), OECD/JRC standard practice (eigenvalue > 1, each > 10%, cumulative > 60%) and
+      Jolliffe (eigenvalue > 0.7) all give 3 components (74.5% of variance). Horn parallel analysis retains only 1
+      component (small-sample uncertainty); the weights change very little between 3 and all 6 components.
+    absolute_loadings_rationale: >
+      PCA component signs are arbitrary and signed component aggregation gave negative weights to indicators the
+      framework defines as vulnerability-increasing. Absolute loadings let PCA set the MAGNITUDE of each weight while
+      the framework fixes the DIRECTION. Weights are statistical weights, not theoretical importance.
+    raw_score: "V_i = sum over j of weight(j) x z_ij"
+    index_scaling: "VI_i = 100 x (V_i - min V) / (max V - min V); 0 = lowest observed, 100 = highest observed"
+    rainfall_treatment: "published IMD values (rainfall_extreme_values.active = keep); Pune-excluded rainfall is sensitivity only"
+    sensitivity_comparisons:
+      - equal_weights
+      - oecd_jrc_factor_weights
+      - hazard_plus_social
+      - pca_abs_loading_all_6_components
+      - pune_excluded_rainfall
+      - oni_v6
+    limitation: >
+      Set A shows weak common-factor structure for PCA/FA-based weighting (KMO = 0.40), so the PCA-derived weights are
+      exploratory statistical weights, not evidence of a latent vulnerability construct; they are close to equal weights.
+    status: FIXED
+
+  kmeans_classification:
+    input: "vulnerability_index_0_100 only (no indicators, z-scores, PCA scores, 2026 or drought-declaration data)"
+    n_clusters: 3
+    random_state: 2026
+    n_init: 20
+    scaling: "none - one variable already on a 0-100 scale; rescaling a single dimension does not change K-Means assignments"
+    group_ordering: "clusters ordered by centroid: lowest -> Low Vulnerability, middle -> Medium, highest -> High"
+    diagnostics_only: "K = 2 and K = 4; tertile split; the index comparison versions (sensitivity only)"
+    interpretation: "relative groups of the 34 districts by index magnitude; not causal, not a drought prediction"
+    status: FIXED
+
+  validation:
+    years: [2018, 2023, 2026]
+    holdout_only_years: [2026]
+    strictly_holdout_2026: true
+    use_in_training: false
+    primary_variable: "share of a district's talukas declared drought-hit (severe + moderate / Trigger-1) in the main GR"
+    denominator: "Census 2011 sub-districts (talukas) per district; unchanged since 2011 per SOI code match"
+    status: FIXED
