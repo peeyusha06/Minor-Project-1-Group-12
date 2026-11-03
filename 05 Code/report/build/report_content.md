@@ -285,7 +285,7 @@ The main statistic is Spearman's rank correlation between the index and the decl
 
 ## 7.10 Dashboard Implementation
 
-The dashboard (app.py) loads the fixed CSV files and the Survey of India boundaries once and caches them. A drop-down list selects a district; the map, district card, indicator table and validation figures update for that district. A radio button switches the map between the group view and the continuous index view, and a second pair of drop-down lists compares any two districts. Figures 7.1 to 7.4 show the main parts of the dashboard.
+The dashboard (app.py) loads the fixed CSV files and the Survey of India boundaries once and caches them. A drop-down list selects a district; the map, district card, indicator table and validation figures update for that district. A radio button switches the map between the group view and the continuous index view, and a second pair of drop-down lists compares any two districts. The dashboard is deployed on Streamlit Community Cloud and is available at https://maharashtra-elnino-vulnerability.streamlit.app. Figures 7.1 to 7.4 show the main parts of the dashboard.
 
 ![Figure 7.1: Dashboard home view with the vulnerability group map and the card for the selected district (Beed).](../figures/dash_map.png){6.2}
 
