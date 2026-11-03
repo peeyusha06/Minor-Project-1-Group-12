@@ -400,6 +400,8 @@ def build():
         if email:
             c_.add_break()
             par.add_run(email)
+    for i in (len(left) - 1, len(a) - 1):                     # gap before the abstract under each column
+        author_pars[i].paragraph_format.space_after = Pt(12)
     for par in author_pars[len(a):]:
         par._p.getparent().remove(par._p)
     P = doc.paragraphs
