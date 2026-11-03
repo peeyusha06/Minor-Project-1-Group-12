@@ -13,6 +13,8 @@ Department of Artificial Intelligence and Data Science, K. J. Somaiya Institute 
 
 **Guide:** Prof. Pankaj Deshmukh
 
+**Live dashboard:** https://maharashtra-elnino-vulnerability.streamlit.app
+
 ## Contents
 
 | Folder | What it contains |
@@ -24,6 +26,8 @@ Department of Artificial Intelligence and Data Science, K. J. Somaiya Institute 
 | [05 Code](05%20Code) | Complete code with the datasets (see below) |
 | [06 Research Paper](06%20Research%20Paper) | Research paper in IEEE format (DOCX and PDF) |
 | [07 Poster](07%20Poster) | Project poster (PPTX and PDF) |
+
+`streamlit_app.py`, `requirements.txt` and `.streamlit/` at the top level only start the online dashboard on Streamlit Community Cloud. The dashboard code is `05 Code/app.py`.
 
 ## Code and datasets (05 Code)
 
